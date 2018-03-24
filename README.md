@@ -1,0 +1,2 @@
+# smail
+基于springboot的分布式邮件发送服务，整合dubbo，邮件发送使用多线程/线程池以提高并发，本项目仅作为学习dubbo和多线程的demo
