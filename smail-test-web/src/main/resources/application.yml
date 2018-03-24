@@ -1,0 +1,24 @@
+#app
+server:
+  port: 80
+  servlet:
+    session:
+      timeout: 7200
+  tomcat:
+    uri-encoding: utf-8
+    max-threads: 1000
+    max-connections: 1000
+
+#dubbo配置
+spring:
+  profiles:
+    active:
+      - dubbo
+  dubbo:
+    application:
+      name: demo-consumer
+    base-package: org.farmlei.smail.testweb.web
+    consumer:
+      timeout: 1000
+      check: true
+      retries: 2
