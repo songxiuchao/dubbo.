@@ -4,6 +4,9 @@ import org.farmlei.smail.bean.Email;
 import org.farmlei.smail.sender.util.MailUtil;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author Administrator
+ */
 @Component
 public abstract class AbstractTask {
 

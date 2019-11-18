@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 /**
  * dubbo RPC接口实现类
+ * @author Administrator
  */
 @Service(protocol="dubbo-hessian")
 public class MailSendServiceImpl implements IMailSendService {
@@ -20,7 +21,7 @@ public class MailSendServiceImpl implements IMailSendService {
                 && !StringUtils.isBlank(subject)
                 && !StringUtils.isBlank(content)) {
             if (StringUtils.isBlank(from)) {
-                from = "aaa";
+                from = "1528856973@qq.com";
             }
             Email email = new Email(from, receiver, subject, content);
             MailSendHandler mailSendHandler = MailSendHandler.getInstance();

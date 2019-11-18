@@ -1,9 +1,7 @@
 package org.farmlei.smail.testweb.web;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.reger.dubbo.annotation.Inject;
 import org.farmlei.smail.provider.IMailSendService;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,7 +27,7 @@ public class TestController {
     public Map send() {
         Map<String, Object> resultMap = new HashMap<>();
         try {
-            mailSendService.send(null, "yuer5531@163.com", "测试邮件主题", "测试邮件内容");
+            mailSendService.send("1528856973@qq.com", "2323214889@qq..com", "测试邮件主题", "测试邮件内容");
             resultMap.put("result", "success");
         } catch (Exception e) {
             e.printStackTrace();

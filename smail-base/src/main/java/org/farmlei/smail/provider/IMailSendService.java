@@ -4,6 +4,7 @@ import org.farmlei.smail.exception.MailServiceException;
 
 /**
  * dubbo-RPC邮件发送接口
+ * @author Administrator
  */
 public interface IMailSendService {
     /**

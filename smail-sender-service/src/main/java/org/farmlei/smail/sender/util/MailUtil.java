@@ -11,6 +11,7 @@ import javax.annotation.PostConstruct;
 
 /**
  * 邮件工具类
+ * @author Administrator
  */
 @Component
 public class MailUtil {

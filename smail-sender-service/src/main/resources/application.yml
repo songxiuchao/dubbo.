@@ -10,19 +10,6 @@ server:
     max-connections: 1000
 #邮件配置
 spring:
-  mail:
-    host: smtp.qq.com
-    username: 357888717@qq.com
-    password: ttt
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-            required: true
-
-spring:
   profiles:
     active:
       - dubbo
