@@ -1,0 +1,34 @@
+#app
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 7200
+  tomcat:
+    uri-encoding: utf-8
+    max-threads: 1000
+    max-connections: 1000
+#邮件配置
+spring:
+  profiles:
+    active:
+      - dubbo
+  dubbo:
+    application:
+      name: demo-provider
+      qos-enable: true
+      qos-port: 1000
+      qos-accept-foreign-ip: true
+    base-package: org.farmlei.smail.sender.provider
+    protocol:
+      id: dubbo
+      name: dubbo
+      serialization: hessian2
+    provider:
+      retries: 0
+      registry: test
+      accesslog: false
+      token: true
+      protocol: dubbo-jvm
+
+

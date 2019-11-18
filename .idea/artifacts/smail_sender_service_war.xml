@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="smail-sender-service:war">
+    <output-path>$PROJECT_DIR$/smail-sender-service/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>smail-sender-service</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="smail-sender-service-1.0.0.war">
+      <element id="artifact" artifact-name="smail-sender-service:war exploded" />
+    </root>
+  </artifact>
+</component>

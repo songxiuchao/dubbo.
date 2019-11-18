@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="smail-test-web:war">
+    <output-path>$PROJECT_DIR$/smail-test-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>smail-test-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="smail-test-web-1.0.0.war">
+      <element id="artifact" artifact-name="smail-test-web:war exploded" />
+    </root>
+  </artifact>
+</component>
